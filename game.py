@@ -47,5 +47,16 @@ while True:
         for j, cpu_num in enumerate(cpu_numbers):
 
             # 같은 숫자여야, S/B이건 판단.
+            if user_num == cpu_num:
+                # 숫자가 같다면, 위치도 같은가?
+                if i == j:
+                    # 같다 : S 발견
+                    s_count += 1
+                else:
+                    # 다르다 : 위치는 다르지만 숫자는 같다 : B 발견
+                    b_count += 1
+
+    # S/B 판정 끝나면 출력
+    print(f'{s_count}S {b_count}B 입니다.')
 
     # 3S가 되었다면? => 정답 맞춤! => 게임 종료
