@@ -39,4 +39,13 @@ while True:
 
     # 문제 숫자 / 내 숫자 비교 => S/B 갯수 파악
 
+    # 내 숫자를 바꾸는 for
+
+    for i, user_num in enumerate(user_numbers):
+
+        # 문제 숫자와 비교하는 for
+        for j, cpu_num in enumerate(cpu_numbers):
+
+            # 같은 숫자여야, S/B이건 판단.
+
     # 3S가 되었다면? => 정답 맞춤! => 게임 종료
